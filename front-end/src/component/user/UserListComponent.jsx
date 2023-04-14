@@ -39,7 +39,7 @@ class UserListComponent extends Component {
             });
 
             this.setState({
-                users: this.state.users.filter(user => user.id !==userID)
+                users: this.state.users.filter( user => user.id !== userID)
             });
         })
         .catch(err => {

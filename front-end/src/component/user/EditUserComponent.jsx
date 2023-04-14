@@ -70,7 +70,7 @@ class EditUserComponent extends Component{
     render(){
         return(
             <div>
-                <Typography variant="h1" component="h2" style={style}>Edit User</Typography>;
+                <Typography variant="h3" component="h3" style={style}>Edit User</Typography>;
                 <form>
                     <TextField type="text" readOnly={true} fullWidth margin="normal" placeholder="please edit your username" name="username" value={this.state.username} onChange={this.onChange} />
                     <TextField fullWidth margin="normal" type="password" placeholder="please edit your password" name="password" value={this.state.password} onChange={this.onChange} />                        
@@ -87,6 +87,7 @@ class EditUserComponent extends Component{
 const style = {
     display : 'flex',
     justifyContent : 'center',
+    color : 'black'
 }
 
 export default EditUserComponent; 
