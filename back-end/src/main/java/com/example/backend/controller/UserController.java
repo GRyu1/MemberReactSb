@@ -47,7 +47,7 @@ public class UserController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteUser(@PathVariable int id, @RequestBody UserVO user){
+    public void deleteUser(@PathVariable int id){
         userMapper.deleteUser(id);
         System.out.println("유저 삭제 성공");
     }
